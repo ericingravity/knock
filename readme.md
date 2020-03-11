@@ -1,39 +1,14 @@
-grongor/knock
+knock gui
 =============
 
-Simple utility for port knocking written in python3.
+Simple GUI made with PyQt5 and python3 with ability to save and load knock configurations.
+Uses grongor/knock as the base.
 
-If you find it useful but you think it lacks some functionality please let me know by creating an issue. Thank you!
-
-Basic usage
+Setup
 -----------
 
-`knock your.server.com 1234 8521 4785`
+You'll need PyQt5. To install it, do `pip install pyqt5`.
 
-Options
--------
+If you make any changes to the .ui file, you can generate a new python file using `python -m PyQt5.uic.pyuic -x knock_window.ui -o knock_window.py`.
 
-`knock --help` will tell you everything you need. Here is the output to save you a few seconds:
-
-```
-usage: knock [-h] [-t TIMEOUT] [-d DELAY] [-u]
-             host port[:protocol] [port[:protocol] ...]
-
-Simple port-knocking client written in python3. See more at
-https://github.com/grongor/knock
-
-positional arguments:
-  host                  Hostname or IP address of the host to knock on.
-                        Supports IPv6.
-  port[:protocol]       Port(s) to knock on, protocol (tcp, udp) is optional.
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -t TIMEOUT, --timeout TIMEOUT
-                        How many milliseconds to wait on hanging connection.
-                        Default is 200 ms.
-  -d DELAY, --delay DELAY
-                        How many milliseconds to wait between each knock.
-                        Default is 200 ms.
-  -u, --udp             Use UDP instead of TCP by default.
-```
+If you'd like to make this a standalone program, I'd recommend using [pyinstaller](https://pypi.org/project/PyInstaller/).

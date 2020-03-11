@@ -1,0 +1,7 @@
+{
+    "host": "fileserver.local",
+    "ports": "7000:udp 8000:tcp 9000:udp 10000:tcp",
+    "udp_state": 0,
+    "delay": 200,
+    "timeout": 400
+}
