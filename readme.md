@@ -1,4 +1,4 @@
-knock gui
+knock GUI
 =============
 
 Simple GUI made with PyQt5 and python3 with ability to save and load knock configurations.
