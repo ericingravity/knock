@@ -1,4 +1,4 @@
-import sys, string, json, os, threading
+import sys, json, os, threading
 from knock import Knocker
 from PyQt5 import QtCore, QtGui, QtWidgets
 from knock_window import Ui_MainWindow
