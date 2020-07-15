@@ -1,8 +1,7 @@
 knock GUI
 =============
 
-Simple GUI made with PyQt5 and python3 with ability to save and load knock configurations.
-Uses grongor/knock as the base.
+Simple GUI for [grongor/knock](https://github.com/grongor/knock) made with PyQt5 and python3 with ability to save and load knock configurations.
 
 Setup
 -----------
